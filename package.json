@@ -1,0 +1,48 @@
+{
+  "name": "gasoline",
+  "version": "0.0.1",
+  "description": "Web-based gasoline statistics generator for vehicles",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/tofagerl/gasoline.git"
+  },
+  "keywords": [
+    "gasoline",
+    "vehicle",
+    "metrics",
+    "economy"
+  ],
+  "author": "Tom Fagerland",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tofagerl/gasoline/issues"
+  },
+  "homepage": "https://github.com/tofagerl/gasoline#readme",
+  "devDependencies": {
+    "ava": "^0.15.2",
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-2": "^6.11.0"
+  },
+  "ava": {
+    "files": [
+      "test/*.js"
+    ],
+    "source": [
+      "**/*.js"
+    ],
+    "require": ["babel-register"],
+    "babel": "inherit"
+  },
+  "dependencies": {
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "webpack": "^1.13.1"
+  }
+}
